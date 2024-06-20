@@ -1,0 +1,12 @@
+{
+    "name": "aiman/pc-specs",
+    "type": "project",
+    "require-dev": {
+        "phpunit/phpunit": "9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aiman\\PcSpecs\\": "src/"
+        }
+    }
+}
