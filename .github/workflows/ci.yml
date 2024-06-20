@@ -13,10 +13,13 @@ jobs:
     - name: Set up PHP
       uses: shivammathur/setup-php@v2
       with:
-        php-version: '7.4' # Of een andere PHP versie die je gebruikt
+        php-version: '7.4'
 
     - name: Install dependencies
       run: composer install
+
+    - name: Make PHPUnit executable
+      run: chmod +x vendor/bin/phpunit
 
     - name: Run tests
       run: vendor/bin/phpunit
